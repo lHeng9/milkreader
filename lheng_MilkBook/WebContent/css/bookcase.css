@@ -1,0 +1,80 @@
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .top2 {
+            width: 100%;
+            height: 50px;
+
+        }
+
+        .top2 .top2-center {
+            width: 60%;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            margin-left: -30%;
+        }
+
+        .top2 .top2-center img {
+            width: 400px;
+            height: 50px;
+        }
+        .mymain{
+            width:100%;
+            height:800px;
+            
+        }
+        .mymain .mymain-center{
+            height:800px;
+            background-color:#F4F4F4;
+            width: 60%;
+            position: absolute;
+            left: 50%;
+            margin-left: -30%;
+        }
+        .mymain .mymain-center .mycenter-tit{
+            width:100%;
+            height:50px;
+            line-height:50px;
+            /* padding-left:20px; */
+            font-size:20px;
+            font-weight:bold;
+            border-bottom:2px solid gray; 
+        }
+        .mymain .mymain-center .mycenter-tit img{
+            border-radius: 50%;
+            width:40px;
+            height:40px;
+            float:left;
+            margin-top:5px;
+            margin-right:10px;
+            margin-left:20px;
+        }
+        
+        .mymain .mymain-center .mycenter-main .bom1{
+            width:120px;
+            height:200px;
+            display:inline-block;
+            margin-right:10px;
+            margin-left:17px;
+            margin-bottom:10px;
+            margin-top:10px;
+        }
+        .mymain .mymain-center .mycenter-main .bom1 img{
+            width:120px;
+            height:150px;
+        }
+        .mymain .mymain-center .mycenter-main .bom1 span{
+            display:block;
+            width:120px;
+            height:25px;
+            line-height:25px;
+            text-align:center;
+            font-size:10px;
+        }
+        .mymain .mymain-center .mycenter-main .bom1 .title{
+            font-weight:bold;
+        }

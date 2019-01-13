@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>	
+    <!-- Add packages here -->
+    <package name="user" extends="struts-default">
+    	<action name="uploadAction" class="com.sw.action.BookUploadAction">
+           	<param name="savePath">/img</param>
+            <result name="uploadOK" >
+    			/WEB-INF/jsp/admin/bck_book_insert.jsp
+            </result>
+        </action>
+        
+        <action name="updateBookAction" class="com.sw.action.UpdateBookAction">
+           	<param name="savePath">/img</param>
+            <result name="uploadOK" type="chain">
+    			showbook_AdminAction
+            </result>
+        </action>
+    	<action name="index" class="com.sw.action.IndexAction">
+    		<result name="success">
+    			/WEB-INF/jsp/customer/login.jsp
+    		</result>
+    	</action>
+    	<action name="admin" class="com.sw.action.AdminAction">
+    		<result name="success">
+    			/WEB-INF/jsp/admin/bck_login.jsp
+    		</result>
+    	</action>
+    	<action name="*_*Action" class="com.sw.action.{2}Action" method="{1}{2}">
+    		<result name="logintoUserOK">
+    			/WEB-INF/jsp/customer/login.jsp
+    		</result>
+    		<result name="registerUserOK">
+    			/WEB-INF/jsp/customer/login.jsp
+    		</result>
+    		<result name="loginUserOK">
+    			/WEB-INF/jsp/customer/main.jsp
+    		</result>
+    		<result name="loginUserFalse">
+    			/WEB-INF/jsp/customer/login.jsp
+    		</result>
+    		<result name="loginAdminOK">
+    			/WEB-INF/jsp/admin/bck_main.jsp
+    		</result>
+    		<result name="showuserOK" type="chain">
+    			showAll_UserAction
+    		</result>
+    		<result name="showAllOK">
+    			/WEB-INF/jsp/admin/bck_user_show.jsp
+    		</result>
+    		<result name="insertbookOK">
+    			/WEB-INF/jsp/admin/bck_book_insert.jsp
+    		</result>
+    		<result name="showbookOK" type="chain">
+    			showAll_BookAction
+    		</result>
+    		<result name="showAllBookOK">
+    			/WEB-INF/jsp/admin/bck_book_show.jsp
+    		</result>
+    		<result name="classifyBookOK" type="chain">
+    			classify2_BookAction
+    		</result>
+    		
+    		<result name="classify2BookOK">
+    			/WEB-INF/jsp/customer/classify.jsp
+    		</result>
+    		<result name="showone2BookOK" type="chain">    			
+    		    find_BookCaseAction
+    		</result>
+    		
+    		<result name="showoneBookOK" type="chain">
+    			showone2_BookAction
+    		</result>
+    		
+    		<result name="showone2BookOK" >    			
+    		    /WEB-INF/jsp/customer/showOneBook.jsp
+    		</result>
+    		
+    		<result name="insertBookCaseOK" type="chain">    			
+    		    showone2_BookAction
+    		</result>
+    		
+    		<result name="mainUserOK">    			
+    		    /WEB-INF/jsp/customer/main.jsp
+    		</result>
+    		
+    		<result name="deleteBookOK" type="chain">    			
+    		    showbook_AdminAction
+    		</result>
+    		
+    		<result name="updateBookOK" >    			
+    		    /WEB-INF/jsp/admin/bck_book_update.jsp
+    		</result>
+    	</action>
+	</package>
+	
+</struts>

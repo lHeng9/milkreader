@@ -1,0 +1,186 @@
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .top2 {
+            width: 100%;
+            height: 50px;
+
+        }
+
+        .top2 .top2-center {
+            width: 60%;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            margin-left: -30%;
+        }
+
+        .top2 .top2-center img {
+            width: 400px;
+            height: 50px;
+        }
+
+        .showbook {
+            margin-top: 7px;
+            width: 100%;
+            height: 320px;
+            
+        }
+
+        .showbook .showbook-center {
+            width: 60%;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            margin-left: -30%;
+            margin-top:10px;
+            margin-bottom:10px;
+            background-color:#F4F4F4;
+        }
+
+        .showbook .showbook-center .showb {
+            display: inline-block;
+            height: 300px;
+            
+        }
+
+        .showbook .showbook-center .center-left {
+            width: 27%;
+            float:left;
+        }
+
+        .showbook .showbook-center .center-left img {
+            width: 220px;
+            height: 280px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .showbook .showbook-center .center-mid {
+            width: 32%;
+            float:left;
+        }
+        .showbook .showbook-center .center-mid .book{
+            width:200px;
+            height:280px;
+         
+            margin-left:20px;
+            margin-top:20px;
+        }
+        .showbook .showbook-center .center-mid .book .add{
+            width:100px;
+            height:50px;
+            line-height:50px;
+            text-align: center;
+            margin-left:20px;
+            border-radius:20px;
+            background-color:red;
+            color:white;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        .showbook .showbook-center .center-mid .book .addfalse{
+        width:100px;
+            height:50px;
+            line-height:50px;
+            text-align: center;
+            margin-left:20px;
+            border-radius:20px;
+            background-color:gray;
+            color:white;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        .showbook .showbook-center .center-mid .book table{
+            padding:10px;
+            width:400px;
+            height:270px;
+            text-align:left;
+            
+        }
+        .showbook .showbook-center .center-mid .book table .param{
+            font-weight: bold;
+            width:50px;
+            color:gray;
+        }
+        .showbook .showbook-center .center-mid .book table td{
+          
+        }
+
+        .showbook .showbook-center .center-right {
+            width: 38%;
+
+        }
+        .showbook .showbook-center .center-right .tit {
+            width:100%;
+            height:40px;
+            border-bottom:1px solid gray;
+            line-height:40px;
+            padding-left:20px;
+            font-weight:bold;
+            
+        }
+        .showbook .showbook-center .center-right .info{
+            width:100%;
+            height:230px;
+            font-size:13px;
+            margin-left:20px;
+            color:gray;
+            margin-top:10px;
+            scroll-behavior: auto;
+            overflow-y:scroll;   
+        }
+        .recommend{
+            width:100%;
+            height:300px;
+        }
+        .recommend .recomd-center{
+            width: 60%;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            margin-left: -30%;
+        }
+        .recommend .recomd-center .recomd-tit{
+            font-size:20px;
+            border-bottom:2px solid gray;
+            width:100%;
+            height:40px;
+            line-height: 40px;
+            padding-left:20px;
+            font-weight:bold;
+            color:gray;
+        }
+        .recommend .recomd-center .recomd-books{
+            width:100%;
+            height:250px;
+            margin-top:8px;
+        }
+        
+        .recommend .recomd-center .recomd-books .bom1{
+            width:120px;
+            height:200px;
+            display:inline-block;
+            margin-right:5px;
+            margin-left:22px;
+            margin-bottom:10px;
+            margin-top:20px;
+        }
+        .recommend .recomd-center .recomd-books .bom1 img{
+            width:120px;
+            height:150px;
+        }
+        .recommend .recomd-center .recomd-books .bom1 span{
+            display:block;
+            width:120px;
+            height:25px;
+            line-height:25px;
+            text-align:center;
+            font-size:10px;
+        }
+        .recommend .recomd-center .recomd-books .bom1 .title{
+            font-weight:bold;
+        }
